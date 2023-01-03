@@ -20,12 +20,12 @@
 		</nav>
 	</header>
 	<main>
-		<div class="container">
+		<div class="container mb-3">
 			<section>
 				<h1>Deine Kleiderspende</h1>
 			</section>
 		</div>
-		<div class="container">
+		<div class="container mb-3">
 			<section>
 				<h2>Kleidungsspende in der Geschäftsstelle</h2>
 				<p>Fülle das nachfolgende Formular aus, um deine Kleidung für eine Krisenregion deiner Wahl bei uns
@@ -50,7 +50,7 @@
 						</div>
 						<div class="col">
 							<div class="mb-2">
-								<lable for="formDonationVorname" class="form-label">Vorname:</lable>
+								<label for="formDonationVorname" class="form-label">Vorname:</label>
 								<input type="text" class="form-control" id="formDonationVorname" name="vorname"
 									placeholder="Vorname">
 							</div>
@@ -65,29 +65,35 @@
 						<input type="number" class="form-control" id="formDonatioTelefon" name="telefon"
 							placeholder="Telefon/Mobil">
 					</div>
-					<div class="mb-2">
-						<label for="formDonationKleidung" class="form-label">Art der Kleidung</label>
-						<select name="kleidung" multiple="multiple">
-							<option value="damenkleidung" id="formDonationKleidung">Damenkleidung
-							</option>
-							<option value="herrenkleidung" id="formDonationKleidung">Herrenkleidung
-							</option>
-							<option value="kinderkleidung" id="formDonationKleidung">Kinderkleidung
-							</option>
-							<option value="babykleidung" id="formDonationKleidung">Babykleidung
-							</option>
-						</select>
-					</div>
-					<div class="mb-2">
-						<label for="formDonationKrisengebiet class=" form-label">Krisengebiet</label>
-						<select name="krisengebiet">
-							<option value="beliebig" id="formDonationKrisengebiet" selected="selected">
-								beliebig</option>
-							<option value="ukraine" id="formDonationKrisengebiet">Ukraine</option>
-							<option value="syrien" id="formDonationKrisengebiet">Syrien</option>
-							<option value="südsudan" id="formDonationKrisengebiet">Südsudan</option>
-							<option value="jemen" id="formDonationKrisengebiet">Jemen</option>
-						</select>
+					<div class="row">
+						<div class="col">
+							<div class="mb-2">
+								<label for="formDonationKleidung" class="form-label">Art der Kleidung</label>
+								<select class="form-select" name="kleidung" multiple="multiple">
+									<option value="damenkleidung" id="formDonationKleidung">Damenkleidung
+									</option>
+									<option value="herrenkleidung" id="formDonationKleidung">Herrenkleidung
+									</option>
+									<option value="kinderkleidung" id="formDonationKleidung">Kinderkleidung
+									</option>
+									<option value="babykleidung" id="formDonationKleidung">Babykleidung
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="col">
+							<div class="mb-2">
+								<label for="formDonationKrisengebiet" class=" form-label">Krisengebiet</label>
+								<select class="form-select" name="krisengebiet">
+									<option value="beliebig" id="formDonationKrisengebiet" selected="selected">
+										beliebig</option>
+									<option value="ukraine" id="formDonationKrisengebiet">Ukraine</option>
+									<option value="syrien" id="formDonationKrisengebiet">Syrien</option>
+									<option value="südsudan" id="formDonationKrisengebiet">Südsudan</option>
+									<option value="jemen" id="formDonationKrisengebiet">Jemen</option>
+								</select>
+							</div>
+						</div>
 					</div>
 				</form>
 			</section>
