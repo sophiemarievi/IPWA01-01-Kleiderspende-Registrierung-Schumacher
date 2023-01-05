@@ -11,26 +11,51 @@
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li> <a href="home.html"><img src="LogoSecondLove.svg"></a></li>
-				<li> <a href="home.html"><img src="SecondLove.svg"> </a> </li>
-				<li><a href="home.html">Homepage</a></li>
-				<li><a href="registration.html">Kleiderspenden</a></li>
-				<li><a href="Krisengebiete.html">Aktuelle Krisengebiete</a></li>
-				<li><a href="contact.html">Kontakt</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="home.html"><img src="LogoSecondLove.svg" alt="LogoSecondLove" width="90"
+						height="72"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registration.html">SPENDEN</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe Geschäftsstelle</a>
+						</li>
+						//-->
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">KONTAKT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="privacy.html">Datenschutz</a></li>
-				<li><a href="imprint.html">Impressum</a></li>
+		<nav class="navbar navbar-expand bg-body-tertiary justify-content-end">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="privacy.html">Datenschutz</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="imprint.html">Impressum</a>
+				</li>
 			</ul>
 		</nav>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
