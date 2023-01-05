@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<title>Homepage SecondLove</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="home.html"><img src="LogoSecondLove.svg" alt="LogoSecondLove" width="90"
+						height="72"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registration.html">Abholung zu Hause</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe Geschäftsstelle</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container mb-3">
+			<section>
+				<h1>Deine Kleiderspende</h1>
+			</section>
+		</div>
+		<div class="container mb-4">
+			<section>
+				<h2>Kleidungsspende in der Geschäftsstelle</h2>
+				<p>Du befindest dich bereits in der Geschäftsstelle? </br> Fülle das nachfolgende Formular aus, um deine
+					Kleidung für eine Krisenregion deiner Wahl bei uns
+					abzugeben.</p>
+			</section>
+		</div>
+		<div class="container mb-3">
+			<section>
+				<form>
+					<div class="mb-1">
+						<label for="formDonationGeschlecht" class="form-check-label">Geschlecht:</label>
+						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+							value="männlich" /> männlich
+						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+							value="weiblich" /> weiblich
+						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+							value="divers" /> divers
+					</div>
+					<div class="row mb-2">
+						<div class="col">
+							<label for="formDonationName" class="form-label">Name:</label>
+							<input type="text" class="form-control" id="formDonationName" name="name"
+								placeholder="Name">
+						</div>
+						<div class="col">
+							<label for="formDonationVorname" class="form-label">Vorname:</label>
+							<input type="text" class="form-control" id="formDonationVorname" name="vorname"
+								placeholder="Vorname">
+						</div>
+					</div>
+					<div class="mb-2">
+						<label for="formDonationMail" class="form-label">E-Mail (optional):</label>
+						<input type="text" class="form-control" id="formDonationMail" name="email" placeholder="E-Mail">
+					</div>
+					<div class="mb-2">
+						<label for="formDonationTelefon" class="form-label">Telefon/Mobil (optional):</label>
+						<input type="number" class="form-control" id="formDonatioTelefon" name="telefon"
+							placeholder="Telefon/Mobil">
+					</div>
+					<div class="row mb-2">
+						<div class="col">
+							<label for="formDonationKleidung" class="form-label">Art der Kleidung</label>
+							<select class="form-select" name="kleidung" multiple="multiple">
+								<option value="damenkleidung" id="formDonationKleidung">Damenkleidung
+								</option>
+								<option value="herrenkleidung" id="formDonationKleidung">Herrenkleidung
+								</option>
+								<option value="kinderkleidung" id="formDonationKleidung">Kinderkleidung
+								</option>
+								<option value="babykleidung" id="formDonationKleidung">Babykleidung
+								</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="formDonationKrisengebiet" class=" form-label">Krisengebiet</label>
+							<select class="form-select" name="krisengebiet">
+								<option value="beliebig" id="formDonationKrisengebiet" selected="selected">
+									beliebig</option>
+								<option value="ukraine" id="formDonationKrisengebiet">Ukraine</option>
+								<option value="syrien" id="formDonationKrisengebiet">Syrien</option>
+								<option value="südsudan" id="formDonationKrisengebiet">Südsudan</option>
+								<option value="jemen" id="formDonationKrisengebiet">Jemen</option>
+							</select>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-dark mt-3">Senden</button>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="privacy.html">Datenschutz</a></li>
+				<li><a href="imprint.html">Impressum</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>
