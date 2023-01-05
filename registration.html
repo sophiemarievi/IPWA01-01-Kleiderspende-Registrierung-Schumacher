@@ -11,117 +11,72 @@
 
 <body>
 	<header>
-		<nav class="nav">
-			<a class="nav-link" href="home.html"><img src="LogoSecondLove.svg" width="90" height="72"></a>
-			<a class="nav-link" href="home.html">Homepage</a>
-			<a class="nav-link active" aria-current="page" href="registration.html">Kleiderspenden</a>
-			<a class="nav-link" href="Krisengebiete.html">Aktuelle Krisengebiete</a>
-			<a class="nav-link" href="contact.html">Kontakt</a>
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="home.html"><img src="LogoSecondLove.svg" alt="LogoSecondLove" width="90"
+						height="72"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registration.html">SPENDEN</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe Geschäftsstelle</a>
+						</li>
+						//-->
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">KONTAKT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
+
 	<main>
-		<div class="container mb-4">
-			<section>
-				<h2>Kleidungsspende von zu Hause</h2>
-				<p>Fülle das nachfolgende Formular aus, um deine Kleidung bequem von zu Hause aus zu spenden. Unser
-					Sammelfahrzeug wird die Kleidung bei dir abholen</p>
-			</section>
-		</div>
-		<div class="container mb-3">
-			<section>
-				<form>
-					<div class="mb-1">
-						<label for="form2DonationGeschlecht" class="form-check-label">Geschlecht:</label>
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="männlich" /> männlich
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="weiblich" /> weiblich
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="divers" /> divers
-					</div>
-					<div class="row mb-2">
-						<div class="col">
-							<label for="form2DonationName" class="form-label">Name:</label>
-							<input type="text" class="form-control" id="form2DonationName" name="name"
-								placeholder="Name">
-						</div>
-						<div class="col">
-							<label for="form2DonationVorname" class="form-label">Vorname:</label>
-							<input type="text" class="form-control" id="form2DonationVorname" name="vorname"
-								placeholder="Vorname">
-						</div>
-					</div>
-					<div class="mb-2">
-						<label for="form2DonationMail" class="form-label">E-Mail:</label>
-						<input type="text" class="form-control" id="form2DonationMail" name="email"
-							placeholder="E-Mail">
-					</div>
-					<div class="mb-2">
-						<label for="form2DonationTelefon" class="form-label">Telefon/Mobil:</label>
-						<input type="number" class="form-control" id="form2DonatioTelefon" name="telefon"
-							placeholder="Telefon/Mobil">
-					</div>
-					<div class="row mb-2">
-						<div class="col-8">
-							<label for="form2DonationStraße" class="form-label">Straße:</label>
-							<input type="text" class="form-control" id="form2DonationStraße" name="straße"
-								placeholder="Straße">
-						</div>
-						<div class="col">
-							<label for="form2DonationHausnr" class="form-label">Hausnummer:</label>
-							<input type="number" class="form-control" id="form2DonationHausnr" name="hausnummer"
-								placeholder="Nr">
-						</div>
-					</div>
-					<div class="row mb-2">
-						<div class="col-8">
-							<label for="form2DonationOrt" class="form-label">Ort:</label>
-							<input type="text" class="form-control" id="form2DonationOrt" name="ort" placeholder="Ort">
-						</div>
-						<div class="col">
-							<label for="form2DonationPlz" class="form-label">PLZ:</label>
-							<input type="text" class="form-control" id="form2DonationPlz" name="plz" placeholder="PLZ">
-						</div>
-					</div>
-					<div class="row mb-2">
-						<div class="col">
-							<label for="form2DonationKleidung" class="form-label">Art der Kleidung</label>
-							<select class="form-select" name="kleidung" multiple="multiple">
-								<option value="damenkleidung" id="form2DonationKleidung">Damenkleidung
-								</option>
-								<option value="herrenkleidung" id="form2DonationKleidung">Herrenkleidung
-								</option>
-								<option value="kinderkleidung" id="form2DonationKleidung">Kinderkleidung
-								</option>
-								<option value="babykleidung" id="form2DonationKleidung">Babykleidung
-								</option>
-							</select>
-						</div>
-						<div class="col">
-							<label for="form2DonationKrisengebiet" class=" form-label">Krisengebiet</label>
-							<select class="form-select" name="krisengebiet">
-								<option value="beliebig" id="form2DonationKrisengebiet" selected="selected">
-									beliebig</option>
-								<option value="ukraine" id="form2DonationKrisengebiet">Ukraine</option>
-								<option value="syrien" id="form2DonationKrisengebiet">Syrien</option>
-								<option value="südsudan" id="form2DonationKrisengebiet">Südsudan</option>
-								<option value="jemen" id="form2DonationKrisengebiet">Jemen</option>
-							</select>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-dark mt-3">Senden</button>
-				</form>
-			</section>
-		</div>
-	</main>
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="privacy.html">Datenschutz</a></li>
-				<li><a href="imprint.html">Impressum</a></li>
-			</ul>
-		</nav>
-	</footer>
+		<main>
+			<div class="container mb-3">
+				<section>
+					<h1>Deine Kleiderspende</h1>
+				</section>
+			</div>
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" aria current="page" href="registrationGeschäftsstelle.html">Übergabe
+							an Geschäftsstelle</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="registrationGeschäftsstelle.html">Abholung</a>
+					</li>
+				</ul>
+			</div>
+
+		</main>
+
+		<footer>
+			<nav class="navbar navbar-expand bg-body-tertiary justify-content-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="privacy.html">Datenschutz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="imprint.html">Impressum</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
 </body>
 
 </html>

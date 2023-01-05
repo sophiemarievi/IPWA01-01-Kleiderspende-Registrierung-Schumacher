@@ -44,84 +44,106 @@
 	<main>
 		<div class="container mt-4 mb-4">
 			<section>
-				<h1 class="text-center">Deine Kleiderspende</h1>
+				<h1>Deine Kleiderspende</h1>
 			</section>
 		</div>
 		<div class="container mb-4">
 			<ul class="nav nav-tabs nav-justified">
 				<li class="nav-item">
-					<a class="nav-link active" aria current="page" href="registrationGeschäftsstelle.html">Übergabe
+					<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe
 						an Geschäftsstelle</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="registrationAbholung.html">Abholung</a>
+					<a class="nav-link active" aria current="page" href="registrationAbholung.html">Abholung</a>
 				</li>
 			</ul>
 		</div>
 		<div class="container mb-4">
 			<section>
-				<h2>Kleidungsspende in der Geschäftsstelle</h2>
-				<p>Du befindest dich bereits in der Geschäftsstelle? </br> Fülle das nachfolgende Formular aus, um deine
-					Kleidung für eine Krisenregion deiner Wahl bei uns
-					abzugeben.</p>
+				<h2>Kleidungsspende von zu Hause</h2>
+				<p>Fülle das nachfolgende Formular aus, um deine Kleidung bequem von zu Hause aus zu spenden. Unser
+					Sammelfahrzeug wird die Kleidung bei dir abholen</p>
 			</section>
 		</div>
 		<div class="container mb-3">
 			<section>
 				<form>
 					<div class="mb-3">
-						<label for="formDonationGeschlecht" class="form-check-label">Geschlecht:</label>
-						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+						<label for="form2DonationGeschlecht" class="form-check-label">Geschlecht:</label>
+						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
 							value="männlich" /> männlich
-						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
 							value="weiblich" /> weiblich
-						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
+						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
 							value="divers" /> divers
 					</div>
 					<div class="row mb-4">
 						<div class="col">
-							<label for="formDonationName" class="form-label">Name:</label>
-							<input type="text" class="form-control" id="formDonationName" name="name"
+							<label for="form2DonationName" class="form-label">Name:</label>
+							<input type="text" class="form-control" id="form2DonationName" name="name"
 								placeholder="Name">
 						</div>
 						<div class="col">
-							<label for="formDonationVorname" class="form-label">Vorname:</label>
-							<input type="text" class="form-control" id="formDonationVorname" name="vorname"
+							<label for="form2DonationVorname" class="form-label">Vorname:</label>
+							<input type="text" class="form-control" id="form2DonationVorname" name="vorname"
 								placeholder="Vorname">
 						</div>
 					</div>
 					<div class="mb-4">
-						<label for="formDonationMail" class="form-label">E-Mail (optional):</label>
-						<input type="text" class="form-control" id="formDonationMail" name="email" placeholder="E-Mail">
+						<label for="form2DonationMail" class="form-label">E-Mail:</label>
+						<input type="text" class="form-control" id="form2DonationMail" name="email"
+							placeholder="E-Mail">
 					</div>
 					<div class="mb-4">
-						<label for="formDonationTelefon" class="form-label">Telefon/Mobil (optional):</label>
-						<input type="number" class="form-control" id="formDonatioTelefon" name="telefon"
+						<label for="form2DonationTelefon" class="form-label">Telefon/Mobil:</label>
+						<input type="number" class="form-control" id="form2DonatioTelefon" name="telefon"
 							placeholder="Telefon/Mobil">
 					</div>
 					<div class="row mb-4">
+						<div class="col-8">
+							<label for="form2DonationStraße" class="form-label">Straße:</label>
+							<input type="text" class="form-control" id="form2DonationStraße" name="straße"
+								placeholder="Straße">
+						</div>
 						<div class="col">
-							<label for="formDonationKleidung" class="form-label">Art der Kleidung</label>
+							<label for="form2DonationHausnr" class="form-label">Hausnummer:</label>
+							<input type="number" class="form-control" id="form2DonationHausnr" name="hausnummer"
+								placeholder="Nr">
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-8">
+							<label for="form2DonationOrt" class="form-label">Ort:</label>
+							<input type="text" class="form-control" id="form2DonationOrt" name="ort" placeholder="Ort">
+						</div>
+						<div class="col">
+							<label for="form2DonationPlz" class="form-label">PLZ:</label>
+							<input type="text" class="form-control" id="form2DonationPlz" name="plz" placeholder="PLZ">
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col">
+							<label for="form2DonationKleidung" class="form-label">Art der Kleidung</label>
 							<select class="form-select" name="kleidung" multiple="multiple">
-								<option value="damenkleidung" id="formDonationKleidung">Damenkleidung
+								<option value="damenkleidung" id="form2DonationKleidung">Damenkleidung
 								</option>
-								<option value="herrenkleidung" id="formDonationKleidung">Herrenkleidung
+								<option value="herrenkleidung" id="form2DonationKleidung">Herrenkleidung
 								</option>
-								<option value="kinderkleidung" id="formDonationKleidung">Kinderkleidung
+								<option value="kinderkleidung" id="form2DonationKleidung">Kinderkleidung
 								</option>
-								<option value="babykleidung" id="formDonationKleidung">Babykleidung
+								<option value="babykleidung" id="form2DonationKleidung">Babykleidung
 								</option>
 							</select>
 						</div>
 						<div class="col">
-							<label for="formDonationKrisengebiet" class=" form-label">Krisengebiet</label>
+							<label for="form2DonationKrisengebiet" class=" form-label">Krisengebiet</label>
 							<select class="form-select" name="krisengebiet">
-								<option value="beliebig" id="formDonationKrisengebiet" selected="selected">
+								<option value="beliebig" id="form2DonationKrisengebiet" selected="selected">
 									beliebig</option>
-								<option value="ukraine" id="formDonationKrisengebiet">Ukraine</option>
-								<option value="syrien" id="formDonationKrisengebiet">Syrien</option>
-								<option value="südsudan" id="formDonationKrisengebiet">Südsudan</option>
-								<option value="jemen" id="formDonationKrisengebiet">Jemen</option>
+								<option value="ukraine" id="form2DonationKrisengebiet">Ukraine</option>
+								<option value="syrien" id="form2DonationKrisengebiet">Syrien</option>
+								<option value="südsudan" id="form2DonationKrisengebiet">Südsudan</option>
+								<option value="jemen" id="form2DonationKrisengebiet">Jemen</option>
 							</select>
 						</div>
 					</div>
