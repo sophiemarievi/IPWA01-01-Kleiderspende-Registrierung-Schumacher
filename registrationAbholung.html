@@ -26,7 +26,7 @@
 							<a class="nav-link active" aria-current="page" href="home.html">HOME</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="registration.html">SPENDEN</a>
+							<a class="nav-link" href="registrationGeschäftsstelle.html">SPENDEN</a>
 						</li>
 						<!-- <li class="nav-item">
 							<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe Geschäftsstelle</a>
@@ -71,67 +71,73 @@
 					<div class="mb-3">
 						<label for="form2DonationGeschlecht" class="form-check-label">Geschlecht:</label>
 						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="männlich" /> männlich
+							value="männlich" required /> männlich
 						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="weiblich" /> weiblich
+							value="weiblich" required /> weiblich
 						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="divers" /> divers
+							value="divers" required /> divers
 					</div>
 					<div class="row mb-4">
 						<div class="col">
 							<label for="form2DonationName" class="form-label">Name:</label>
 							<input type="text" class="form-control" id="form2DonationName" name="name"
-								placeholder="Name">
+								placeholder="Name" required>
 						</div>
 						<div class="col">
 							<label for="form2DonationVorname" class="form-label">Vorname:</label>
 							<input type="text" class="form-control" id="form2DonationVorname" name="vorname"
-								placeholder="Vorname">
+								placeholder="Vorname" required>
 						</div>
 					</div>
 					<div class="mb-4">
 						<label for="form2DonationMail" class="form-label">E-Mail:</label>
-						<input type="text" class="form-control" id="form2DonationMail" name="email"
-							placeholder="E-Mail">
+						<input type="email" class="form-control" id="form2DonationMail" name="email"
+							placeholder="E-Mail" required>
 					</div>
 					<div class="mb-4">
 						<label for="form2DonationTelefon" class="form-label">Telefon/Mobil:</label>
-						<input type="number" class="form-control" id="form2DonatioTelefon" name="telefon"
-							placeholder="Telefon/Mobil">
+						<input type="tel" class="form-control" id="form2DonatioTelefon" name="telefon"
+							placeholder="Telefon/Mobil" required>
 					</div>
 					<div class="row mb-4">
 						<div class="col-8">
 							<label for="form2DonationStraße" class="form-label">Straße:</label>
 							<input type="text" class="form-control" id="form2DonationStraße" name="straße"
-								placeholder="Straße">
+								placeholder="Straße" required>
 						</div>
 						<div class="col">
 							<label for="form2DonationHausnr" class="form-label">Hausnummer:</label>
 							<input type="number" class="form-control" id="form2DonationHausnr" name="hausnummer"
-								placeholder="Nr">
+								placeholder="Nr" required>
 						</div>
 					</div>
 					<div class="row mb-4">
 						<div class="col-8">
 							<label for="form2DonationOrt" class="form-label">Ort:</label>
-							<input type="text" class="form-control" id="form2DonationOrt" name="ort" placeholder="Ort">
+							<input type="text" class="form-control" id="form2DonationOrt" name="ort" placeholder="Ort"
+								required>
 						</div>
 						<div class="col">
 							<label for="form2DonationPlz" class="form-label">PLZ:</label>
-							<input type="text" class="form-control" id="form2DonationPlz" name="plz" placeholder="PLZ">
+							<input type="number" class="form-control" id="form2DonationPlz" name="plz"
+								placeholder="PLZ">
 						</div>
 					</div>
 					<div class="row mb-4">
 						<div class="col">
 							<label for="form2DonationKleidung" class="form-label">Art der Kleidung</label>
 							<select class="form-select" name="kleidung" multiple="multiple">
-								<option value="damenkleidung" id="form2DonationKleidung">Damenkleidung
+								<option value="damenkleidung" id="form2DonationKleidung">
+									Damenkleidung
 								</option>
-								<option value="herrenkleidung" id="form2DonationKleidung">Herrenkleidung
+								<option value="herrenkleidung" id="form2DonationKleidung">
+									Herrenkleidung
 								</option>
-								<option value="kinderkleidung" id="form2DonationKleidung">Kinderkleidung
+								<option value="kinderkleidung" id="form2DonationKleidung">
+									Kinderkleidung
 								</option>
-								<option value="babykleidung" id="form2DonationKleidung">Babykleidung
+								<option value="babykleidung" id="form2DonationKleidung">
+									Babykleidung
 								</option>
 							</select>
 						</div>
