@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
 
 	// Get full query string from URL 
@@ -15,27 +16,64 @@ document.addEventListener("DOMContentLoaded", () => {
 	const telnr = urlParams.get('telnr');
 	const kleidung = urlParams.get('kleidung');
 	const krisengebiet = urlParams.get('krisengebiet');
-	const ort = "50668 Köln";
+	const ortGS = "50668 Köln";
+	const straße = urlParams.get('straße');
+	const hausnr = urlParams.get('hausnr');
+	const plz = urlParams.get('plz');
+	const ort = urlParams.get('ort');
 	const datum = new Date().toLocaleDateString('de-DE');
 	const zeit = new Date().toLocaleTimeString('de-DE');
 
-	console.log(datum)
+
 
 	if (geschlecht === "weiblich") {
-		elem.innerHTML = `Liebe ${vorname}, deine Spende wurde erfolgreich registriert`;
+		elem.innerHTML = `Liebe ${vorname}, deine Spende wurde erfolgreich registriert.`;
 	} else if (geschlecht === "männlich") {
-		elem.innerHTML = `Lieber ${vorname}, deine Spende wurde erfolgreich registriert`;
+		elem.innerHTML = `Lieber ${vorname}, deine Spende wurde erfolgreich registriert.`;
 	} else if (geschlecht === "divers") {
-		elem.innerHTML = `Liebe*r ${vorname}, deine Spende wurde erfolgreich registriert`;
+		elem.innerHTML = `Liebe*r ${vorname}, deine Spende wurde erfolgreich registriert.`;
 	}
 
-	elem2.innerHTML = `Name: ${name} 
-	Vorname: ${vorname} 
-	Mail: ${mail} 
-	Mobil/Telefon: ${telnr} 
-	Abgegebene Kleidung: ${kleidung} 
-	Gewünschtes Kriesengebiet: ${krisengebiet} 
-	Spendenort: ${ort} 
-	Datum: ${datum} 
-	Uhrzeit: ${zeit}`;
+
+	if (mail == null && telnr == null) {
+		elem2.innerHTML = `Name: ${name} 
+	<br>Vorname: ${vorname} 
+	<br>Mail: Keine Angabe
+	<br>Mobil/Telefon: Keine Angabe
+	<br>Abgegebene Kleidung: ${kleidung} 
+	<br>Gewünschtes Kriesengebiet: ${krisengebiet} 
+	<br>Spendenort: ${ortGS} 
+	<br>Datum: ${datum} 
+	<br>Uhrzeit: ${zeit}`;
+	} else if (mail != null && telnr == null) {
+		elem2.innerHTML = `Name: ${name} <br> Vorname: ${vorname} 
+<br> Mail: ${mail} 
+<br> Mobil/Telefon: keine Angabe
+<br> Abgegebene Kleidung: ${kleidung} 
+<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Spendenort: ${ortGS} 
+<br> Datum: ${datum} 
+<br> Uhrzeit: ${zeit}`;
+	} else if (mail == null && telnr != null) {
+		elem2.innerHTML = `Name: ${name} 
+<br> Vorname: ${vorname} 
+<br> Mail: keine Angabe
+<br> Mobil/Telefon: ${telnr} 
+<br> Abgegebene Kleidung: ${kleidung} 
+<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Spendenort: ${ortGS} 
+<br> Datum: ${datum} 
+<br> Uhrzeit: ${zeit}`;
+	} else {
+		elem2.innerHTML = `Name: ${name} 
+<br> Vorname: ${vorname} 
+<br> Mail: ${mail} 
+<br> Mobil/Telefon: ${telnr} 
+<br> Abgegebene Kleidung: ${kleidung} 
+<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Spendenort: ${ortGS} 
+<br> Datum: ${datum} 
+<br> Uhrzeit: ${zeit}`;
+	}
 })
+
