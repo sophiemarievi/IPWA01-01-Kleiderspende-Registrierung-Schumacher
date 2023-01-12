@@ -64,7 +64,7 @@
 		</div>
 		<div class="container mb-3">
 			<section>
-				<form action="send.html" method="get" id="myForm">
+				<form action="send.html" method="get">
 					<div class="mb-3">
 						<label for="formDonationGeschlecht" class="form-check-label">Geschlecht:</label>
 						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
@@ -88,12 +88,11 @@
 					</div>
 					<div class="mb-4">
 						<label for="formDonationMail" class="form-label">E-Mail (optional):</label>
-						<input type="email" class="form-control" id="formDonationMail" name="email"
-							placeholder="E-Mail">
+						<input type="email" class="form-control" id="formDonationMail" name="mail" placeholder="E-Mail">
 					</div>
 					<div class="mb-4">
 						<label for="formDonationTelefon" class="form-label">Telefon/Mobil (optional):</label>
-						<input type="tel" class="form-control" id="formDonatioTelefon" name="telefon"
+						<input type="tel" class="form-control" id="formDonatioTelefon" name="telnr"
 							placeholder="Telefon/Mobil">
 					</div>
 					<div class="row mb-4">
@@ -122,8 +121,7 @@
 							</select>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-dark mt-3" id="btn1"
-						onclick="registrationGeschäftsstelle()">Senden</button>
+					<button type="submit" class="btn btn-dark mt-3" id="btn1">Senden</button>
 				</form>
 			</section>
 		</div>
