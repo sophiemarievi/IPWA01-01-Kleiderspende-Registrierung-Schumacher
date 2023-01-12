@@ -28,10 +28,6 @@
 						<li class="nav-item">
 							<a class="nav-link" href="registrationGeschäftsstelle.html">SPENDEN</a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe Geschäftsstelle</a>
-						</li>
-						//-->
 						<li class="nav-item">
 							<a class="nav-link" href="contact.html">KONTAKT</a>
 						</li>
@@ -68,7 +64,7 @@
 		</div>
 		<div class="container mb-3">
 			<section>
-				<form>
+				<form action="send.html" method="get" id="myForm">
 					<div class="mb-3">
 						<label for="formDonationGeschlecht" class="form-check-label">Geschlecht:</label>
 						<input type="radio" class="form-check-input" id="formDonationGeschlecht" name="geschlecht"
@@ -126,7 +122,8 @@
 							</select>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-dark mt-3">Senden</button>
+					<button type="submit" class="btn btn-dark mt-3" id="btn1"
+						onclick="registrationGeschäftsstelle()">Senden</button>
 				</form>
 			</section>
 		</div>
@@ -144,7 +141,7 @@
 			</ul>
 		</nav>
 	</footer>
-
+	<script src="script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
