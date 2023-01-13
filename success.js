@@ -34,9 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
 		elem.innerHTML = `Liebe*r ${vorname}, deine Spende wurde erfolgreich registriert.`;
 	}
 
-
-	if (mail == null && telnr == null) {
+	if (queryString.includes('plz')) {
 		elem2.innerHTML = `Name: ${name} 
+	<br>Vorname: ${vorname} 
+	<br>Mail: ${mail}
+	<br>Mobil/Telefon: ${telnr}
+	<br>Abzugebene Kleidung: ${kleidung} 
+	<br>Gewünschtes Kriesengebiet: ${krisengebiet} 
+	<br>Abholadresse: ${straße} ${hausnr}, ${plz} ${ort} 
+	<br>Datum: ${datum} 
+	<br>Uhrzeit: ${zeit}`;
+	} else {
+		if (mail == null && telnr == null) {
+			elem2.innerHTML = `Name: ${name} 
 	<br>Vorname: ${vorname} 
 	<br>Mail: Keine Angabe
 	<br>Mobil/Telefon: Keine Angabe
@@ -45,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	<br>Spendenort: ${ortGS} 
 	<br>Datum: ${datum} 
 	<br>Uhrzeit: ${zeit}`;
-	} else if (mail != null && telnr == null) {
-		elem2.innerHTML = `Name: ${name} <br> Vorname: ${vorname} 
+		} else if (mail != null && telnr == null) {
+			elem2.innerHTML = `Name: ${name} <br> Vorname: ${vorname} 
 <br> Mail: ${mail} 
 <br> Mobil/Telefon: keine Angabe
 <br> Abgegebene Kleidung: ${kleidung} 
@@ -54,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
-	} else if (mail == null && telnr != null) {
-		elem2.innerHTML = `Name: ${name} 
+		} else if (mail == null && telnr != null) {
+			elem2.innerHTML = `Name: ${name} 
 <br> Vorname: ${vorname} 
 <br> Mail: keine Angabe
 <br> Mobil/Telefon: ${telnr} 
@@ -64,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
-	} else {
-		elem2.innerHTML = `Name: ${name} 
+		} else {
+			elem2.innerHTML = `Name: ${name} 
 <br> Vorname: ${vorname} 
 <br> Mail: ${mail} 
 <br> Mobil/Telefon: ${telnr} 
@@ -74,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
+		}
 	}
 })
 
