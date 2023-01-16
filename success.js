@@ -33,63 +33,63 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 	if (geschlecht === "weiblich") {
-		elem.innerHTML = `Liebe ${vorname}, deine Spende wurde erfolgreich registriert.`;
+		elem.innerHTML = `Liebe ${vorname}, herzlichen Dank für deine Spende! Deine Registrierung war erfolgreich. `;
 	} else if (geschlecht === "männlich") {
-		elem.innerHTML = `Lieber ${vorname}, deine Spende wurde erfolgreich registriert.`;
+		elem.innerHTML = `Lieber ${vorname}, herzlichen Dank für deine Spende! Deine Registrierung war erfolgreich.`;
 	} else if (geschlecht === "divers") {
-		elem.innerHTML = `Liebe*r ${vorname}, deine Spende wurde erfolgreich registriert.`;
+		elem.innerHTML = `Liebe*r ${vorname}, herzlichen Dank für deine Spende! Deine Registrierung war erfolgreich.`;
 	}
 
 	if (queryString.includes('plz')) {
-		elem2.innerHTML = `Name: ${name} 
-	<br>Vorname: ${vorname} 
-	<br>Mail: ${mail}
-	<br>Mobil/Telefon: ${telnr}
-	<br>Abzugebene Kleidung: ${kleidungCapitalized} 
-	<br>Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
-	<br>Abholadresse: ${straße} ${hausnr}, ${plz} ${ort} 
-	<br>Datum: ${datum} 
-	<br>Uhrzeit: ${zeit}`;
+		elem2.innerHTML = `<b>Name:</b> ${name} 
+	<br><b>Vorname:</b> ${vorname} 
+	<br><b>Mail:</b> ${mail}
+	<br><b>Mobil/Telefon:</b> ${telnr}
+	<br><b>Abzugebene Kleidung:</b> ${kleidungCapitalized} 
+	<br><b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
+	<br><b>Abholadresse:</b> ${straße} ${hausnr}, ${plz} ${ort} 
+	<br><b>Datum:</b> ${datum} 
+	<br><b>Uhrzeit:</b> ${zeit}`;
 	} else {
 		if (mail == "" && telnr == "") {
-			elem2.innerHTML = `Name: ${name} 
-	<br>Vorname: ${vorname} 
-	<br>Mail: Keine Angabe
-	<br>Mobil/Telefon: Keine Angabe
-	<br>Abgegebene Kleidung: ${kleidungCapitalized} 
-	<br>Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
-	<br>Spendenort: ${ortGS} 
-	<br>Datum: ${datum} 
-	<br>Uhrzeit: ${zeit}`;
+			elem2.innerHTML = `<b>Name:</b> ${name} 
+	<br><b>Vorname:</b> ${vorname} 
+	<br><b>Mail:</b> Keine Angabe
+	<br><b>Mobil/Telefon:</b> Keine Angabe
+	<br><b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
+	<br><b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
+	<br><b>Spendenort:</b> ${ortGS} 
+	<br><b>Datum:</b> ${datum} 
+	<br><b>Uhrzeit:</b> ${zeit}`;
 		} else if (mail != "" && telnr == "") {
-			elem2.innerHTML = `Name: ${name} <br> Vorname: ${vorname} 
-<br> Mail: ${mail} 
-<br> Mobil/Telefon: keine Angabe
-<br> Abgegebene Kleidung: ${kleidungCapitalized} 
-<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
-<br> Spendenort: ${ortGS} 
-<br> Datum: ${datum} 
-<br> Uhrzeit: ${zeit}`;
+			elem2.innerHTML = `<b>Name:</b> ${name} <br> <b>Vorname:</b> ${vorname} 
+<br> <b>Mail:</b> ${mail} 
+<br> <b>Mobil/Telefon:</b> keine Angabe
+<br> <b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
+<br> <b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
+<br> <b>Spendenort:</b> ${ortGS} 
+<br> <b>Datum:</b> ${datum} 
+<br> <b>Uhrzeit:</b> ${zeit}`;
 		} else if (mail == "" && telnr != "") {
-			elem2.innerHTML = `Name: ${name} 
-<br> Vorname: ${vorname} 
-<br> Mail: keine Angabe
-<br> Mobil/Telefon: ${telnr} 
-<br> Abgegebene Kleidung: ${kleidungCapitalized} 
-<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
-<br> Spendenort: ${ortGS} 
-<br> Datum: ${datum} 
-<br> Uhrzeit: ${zeit}`;
+			elem2.innerHTML = `<b>Name:</b> ${name} 
+<br> <b>Vorname:</b> ${vorname} 
+<br> <b>Mail:</b> keine Angabe
+<br> <b>Mobil/Telefon:</b> ${telnr} 
+<br> <b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
+<br> <b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
+<br> <b>Spendenort:</b> ${ortGS} 
+<br> <b>Datum:</b> ${datum} 
+<br> <b>Uhrzeit:</b> ${zeit}`;
 		} else {
-			elem2.innerHTML = `Name: ${name} 
-<br> Vorname: ${vorname} 
-<br> Mail: ${mail} 
-<br> Mobil/Telefon: ${telnr} 
-<br> Abgegebene Kleidung: ${kleidungCapitalized} 
-<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
-<br> Spendenort: ${ortGS} 
-<br> Datum: ${datum} 
-<br> Uhrzeit: ${zeit}`;
+			elem2.innerHTML = `<b>Name:</b> ${name} 
+<br> <b>Vorname:</b> ${vorname} 
+<br> <b>Mail:</b> ${mail} 
+<br> <b>Mobil/Telefon:</b> ${telnr} 
+<br> <b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
+<br> <b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
+<br> <b>Spendenort:</b> ${ortGS} 
+<br> <b>Datum:</b> ${datum} 
+<br> <b>Uhrzeit:</b> ${zeit}`;
 		}
 	}
 })

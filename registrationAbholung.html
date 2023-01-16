@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -38,122 +39,125 @@
 	</header>
 
 	<main>
-		<div class="container my-4">
-			<section>
-				<h1>Deine Kleiderspende</h1>
-			</section>
+		<div class="container-fluid bg-1 pt-4">
+			<div class="container my-4">
+				<h1 class="text-center">Deine Kleiderspende</h1>
+			</div>
+
+			<div class="container mb-4">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="nav-item">
+						<a class="nav-link tabnav-link" href="registrationGeschäftsstelle.html">Übergabe
+							an Geschäftsstelle</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active active-tabnav-link" aria current="page"
+							href="registrationAbholung.html">Abholung</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="container mb-4">
-			<ul class="nav nav-tabs nav-justified">
-				<li class="nav-item">
-					<a class="nav-link" href="registrationGeschäftsstelle.html">Übergabe
-						an Geschäftsstelle</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" aria current="page" href="registrationAbholung.html">Abholung</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container mb-4">
-			<section>
-				<h2>Kleidungsspende von zu Hause</h2>
-				<p>Fülle das nachfolgende Formular aus, um deine Kleidung bequem von zu Hause aus zu spenden. Unser
-					Sammelfahrzeug wird die Kleidung bei dir abholen</p>
-			</section>
-		</div>
-		<div class="container mb-3">
-			<section>
-				<form action="send.html" method="get">
-					<div class="mb-3">
-						<label for="form2DonationGeschlecht" class="form-check-label">Geschlecht:</label>
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="männlich" required /> männlich
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="weiblich" required /> weiblich
-						<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
-							value="divers" required /> divers
-					</div>
-					<div class="row mb-4">
-						<div class="col">
-							<label for="form2DonationName" class="form-label">Name:</label>
-							<input type="text" class="form-control" id="form2DonationName" name="name"
-								placeholder="Name" required>
+		<div class="container-fluid py-3">
+			<div class="container bg-2 border rounded">
+				<div class="container my-4">
+					<h2 class="text-center pb-3">Kleidungsspende von zu Hause</h2>
+					<p>Fülle das nachfolgende Formular aus, um deine Kleidung bequem von zu Hause aus zu spenden. <br>
+						Unser Sammelfahrzeug wird die Kleidung bei dir abholen.</p>
+				</div>
+				<div class="container mb-3">
+					<form action="send.html" method="get">
+						<div class="mb-3">
+							<label for="form2DonationGeschlecht" class="form-check-label">Geschlecht:</label>
+							<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
+								value="männlich" required /> männlich
+							<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
+								value="weiblich" required /> weiblich
+							<input type="radio" class="form-check-input" id="form2DonationGeschlecht" name="geschlecht"
+								value="divers" required /> divers
 						</div>
-						<div class="col">
-							<label for="form2DonationVorname" class="form-label">Vorname:</label>
-							<input type="text" class="form-control" id="form2DonationVorname" name="vorname"
-								placeholder="Vorname" required>
+						<div class="row mb-4">
+							<div class="col">
+								<label for="form2DonationName" class="form-label">Name:</label>
+								<input type="text" class="form-control" id="form2DonationName" name="name"
+									placeholder="Name" required>
+							</div>
+							<div class="col">
+								<label for="form2DonationVorname" class="form-label">Vorname:</label>
+								<input type="text" class="form-control" id="form2DonationVorname" name="vorname"
+									placeholder="Vorname" required>
+							</div>
 						</div>
-					</div>
-					<div class="mb-4">
-						<label for="form2DonationMail" class="form-label">E-Mail:</label>
-						<input type="email" class="form-control" id="form2DonationMail" name="mail" placeholder="E-Mail"
-							required>
-					</div>
-					<div class="mb-4">
-						<label for="form2DonationTelefon" class="form-label">Telefon/Mobil:</label>
-						<input type="tel" class="form-control" id="form2DonatioTelefon" name="telnr"
-							placeholder="Telefon/Mobil" required>
-					</div>
-					<div class="row mb-4">
-						<div class="col-8">
-							<label for="form2DonationStraße" class="form-label">Straße:</label>
-							<input type="text" class="form-control" id="form2DonationStraße" name="straße"
-								placeholder="Straße" required>
+						<div class="mb-4">
+							<label for="form2DonationMail" class="form-label">E-Mail:</label>
+							<input type="email" class="form-control" id="form2DonationMail" name="mail"
+								placeholder="E-Mail" required>
 						</div>
-						<div class="col">
-							<label for="form2DonationHausnr" class="form-label">Hausnummer:</label>
-							<input type="number" class="form-control" id="form2DonationHausnr" name="hausnr"
-								placeholder="Nr" required>
+						<div class="mb-4">
+							<label for="form2DonationTelefon" class="form-label">Telefon/Mobil:</label>
+							<input type="tel" class="form-control" id="form2DonatioTelefon" name="telnr"
+								placeholder="Telefon/Mobil" required>
 						</div>
-					</div>
-					<div class="row mb-4">
-						<div class="col-8">
-							<label for="form2DonationOrt" class="form-label">Ort:</label>
-							<input type="text" class="form-control" id="form2DonationOrt" name="ort" placeholder="Ort"
-								required>
+						<div class="row mb-4">
+							<div class="col-8">
+								<label for="form2DonationStraße" class="form-label">Straße:</label>
+								<input type="text" class="form-control" id="form2DonationStraße" name="straße"
+									placeholder="Straße" required>
+							</div>
+							<div class="col">
+								<label for="form2DonationHausnr" class="form-label">Hausnummer:</label>
+								<input type="number" class="form-control" id="form2DonationHausnr" name="hausnr"
+									placeholder="Nr" required>
+							</div>
 						</div>
-						<div class="col">
-							<label for="form2DonationPlz" class="form-label">PLZ:</label>
-							<input type="number" class="form-control" id="form2DonationPlz" name="plz" placeholder="PLZ"
-								onblur="validPlz()">
+						<div class="row mb-4">
+							<div class="col-8">
+								<label for="form2DonationOrt" class="form-label">Ort:</label>
+								<input type="text" class="form-control" id="form2DonationOrt" name="ort"
+									placeholder="Ort" required>
+							</div>
+							<div class="col">
+								<label for="form2DonationPlz" class="form-label">PLZ:</label>
+								<input type="number" class="form-control" id="form2DonationPlz" name="plz"
+									placeholder="PLZ" onblur="validPlz()">
+							</div>
 						</div>
-					</div>
-					<div class="row mb-4">
-						<div class="col">
-							<label for="form2DonationKleidung" class="form-label">Art der Kleidung</label>
-							<select class="form-select" name="kleidung" multiple="multiple">
-								<option value="damenkleidung" id="form2DonationKleidung">
-									Damenkleidung
-								</option>
-								<option value="herrenkleidung" id="form2DonationKleidung">
-									Herrenkleidung
-								</option>
-								<option value="kinderkleidung" id="form2DonationKleidung">
-									Kinderkleidung
-								</option>
-								<option value="babykleidung" id="form2DonationKleidung">
-									Babykleidung
-								</option>
-							</select>
+						<div class="row mb-4">
+							<div class="col">
+								<label for="form2DonationKleidung" class="form-label">Art der Kleidung</label>
+								<select class="form-select" name="kleidung" multiple="multiple">
+									<option value="damenkleidung" id="form2DonationKleidung">
+										Damenkleidung
+									</option>
+									<option value="herrenkleidung" id="form2DonationKleidung">
+										Herrenkleidung
+									</option>
+									<option value="kinderkleidung" id="form2DonationKleidung">
+										Kinderkleidung
+									</option>
+									<option value="babykleidung" id="form2DonationKleidung">
+										Babykleidung
+									</option>
+								</select>
+							</div>
+							<div class="col">
+								<label for="form2DonationKrisengebiet" class=" form-label">Krisengebiet</label>
+								<select class="form-select" name="krisengebiet">
+									<option value="beliebig" id="form2DonationKrisengebiet" selected="selected">
+										beliebig</option>
+									<option value="ukraine" id="form2DonationKrisengebiet">Ukraine</option>
+									<option value="syrien" id="form2DonationKrisengebiet">Syrien</option>
+									<option value="südsudan" id="form2DonationKrisengebiet">Südsudan</option>
+									<option value="jemen" id="form2DonationKrisengebiet">Jemen</option>
+								</select>
+							</div>
 						</div>
-						<div class="col">
-							<label for="form2DonationKrisengebiet" class=" form-label">Krisengebiet</label>
-							<select class="form-select" name="krisengebiet">
-								<option value="beliebig" id="form2DonationKrisengebiet" selected="selected">
-									beliebig</option>
-								<option value="ukraine" id="form2DonationKrisengebiet">Ukraine</option>
-								<option value="syrien" id="form2DonationKrisengebiet">Syrien</option>
-								<option value="südsudan" id="form2DonationKrisengebiet">Südsudan</option>
-								<option value="jemen" id="form2DonationKrisengebiet">Jemen</option>
-							</select>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-dark mt-3">Senden</button>
-				</form>
-			</section>
+						<button type="submit" class="btn btn-lg btn-dark mt-3">Senden</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</main>
+
 
 	<footer>
 		<nav class="navbar navbar-expand bg-body-tertiary justify-content-end">

@@ -1,12 +1,26 @@
 .bg-1 {
-	background-color: #5B897C;
+	background-color: #2F7460;
 	color: #ffffff;
 }
 
 .bg-2 {
 	background-color: #E7E8ED;
+	color: black;
 }
 
 body {
 	line-height: 1.8;
+}
+
+.tabnav-link {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.active-tabnav-link {
+	font-size: 18px;
+}
+
+.nav-link:hover {
+	color: black;
 }
