@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const zeit = new Date().toLocaleTimeString('de-DE');
 
 
+	const firstCharKleidung = kleidung.charAt(0);
+	const kleidungCapitalized = kleidung.replace(firstCharKleidung, firstCharKleidung.toUpperCase());
+
+	const firstCharKrisengebiet = krisengebiet.charAt(0);
+	const krisengebietCapitalized = krisengebiet.replace(firstCharKrisengebiet, firstCharKrisengebiet.toUpperCase());
+
 
 	if (geschlecht === "weiblich") {
 		elem.innerHTML = `Liebe ${vorname}, deine Spende wurde erfolgreich registriert.`;
@@ -39,38 +45,38 @@ document.addEventListener("DOMContentLoaded", () => {
 	<br>Vorname: ${vorname} 
 	<br>Mail: ${mail}
 	<br>Mobil/Telefon: ${telnr}
-	<br>Abzugebene Kleidung: ${kleidung} 
-	<br>Gewünschtes Kriesengebiet: ${krisengebiet} 
+	<br>Abzugebene Kleidung: ${kleidungCapitalized} 
+	<br>Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
 	<br>Abholadresse: ${straße} ${hausnr}, ${plz} ${ort} 
 	<br>Datum: ${datum} 
 	<br>Uhrzeit: ${zeit}`;
 	} else {
-		if (mail == null && telnr == null) {
+		if (mail == "" && telnr == "") {
 			elem2.innerHTML = `Name: ${name} 
 	<br>Vorname: ${vorname} 
 	<br>Mail: Keine Angabe
 	<br>Mobil/Telefon: Keine Angabe
-	<br>Abgegebene Kleidung: ${kleidung} 
-	<br>Gewünschtes Kriesengebiet: ${krisengebiet} 
+	<br>Abgegebene Kleidung: ${kleidungCapitalized} 
+	<br>Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
 	<br>Spendenort: ${ortGS} 
 	<br>Datum: ${datum} 
 	<br>Uhrzeit: ${zeit}`;
-		} else if (mail != null && telnr == null) {
+		} else if (mail != "" && telnr == "") {
 			elem2.innerHTML = `Name: ${name} <br> Vorname: ${vorname} 
 <br> Mail: ${mail} 
 <br> Mobil/Telefon: keine Angabe
-<br> Abgegebene Kleidung: ${kleidung} 
-<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Abgegebene Kleidung: ${kleidungCapitalized} 
+<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
-		} else if (mail == null && telnr != null) {
+		} else if (mail == "" && telnr != "") {
 			elem2.innerHTML = `Name: ${name} 
 <br> Vorname: ${vorname} 
 <br> Mail: keine Angabe
 <br> Mobil/Telefon: ${telnr} 
-<br> Abgegebene Kleidung: ${kleidung} 
-<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Abgegebene Kleidung: ${kleidungCapitalized} 
+<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
@@ -79,8 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
 <br> Vorname: ${vorname} 
 <br> Mail: ${mail} 
 <br> Mobil/Telefon: ${telnr} 
-<br> Abgegebene Kleidung: ${kleidung} 
-<br> Gewünschtes Kriesengebiet: ${krisengebiet} 
+<br> Abgegebene Kleidung: ${kleidungCapitalized} 
+<br> Gewünschtes Kriesengebiet: ${krisengebietCapitalized} 
 <br> Spendenort: ${ortGS} 
 <br> Datum: ${datum} 
 <br> Uhrzeit: ${zeit}`;
