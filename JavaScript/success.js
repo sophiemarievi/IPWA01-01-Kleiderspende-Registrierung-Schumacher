@@ -1,13 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-
 	// Get full query string from URL 
 	const queryString = window.location.search;
-	console.log(queryString);
-
 
 	const urlParams = new URLSearchParams(queryString);
-	console.log(urlParams);
 
 	const geschlecht = urlParams.get('geschlecht');
 	const name = urlParams.get('name');
@@ -64,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		} else if (mail != "" && telnr == "") {
 			elem2.innerHTML = `<b>Name:</b> ${name} <br> <b>Vorname:</b> ${vorname} 
 <br> <b>Mail:</b> ${mail} 
-<br> <b>Mobil/Telefon:</b> keine Angabe
+<br> <b>Mobil/Telefon:</b> Keine Angabe
 <br> <b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
 <br> <b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
 <br> <b>Spendenort:</b> ${ortGS} 
@@ -73,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		} else if (mail == "" && telnr != "") {
 			elem2.innerHTML = `<b>Name:</b> ${name} 
 <br> <b>Vorname:</b> ${vorname} 
-<br> <b>Mail:</b> keine Angabe
+<br> <b>Mail:</b> Keine Angabe
 <br> <b>Mobil/Telefon:</b> ${telnr} 
 <br> <b>Abgegebene Kleidung:</b> ${kleidungCapitalized} 
 <br> <b>Gewünschtes Kriesengebiet:</b> ${krisengebietCapitalized} 
@@ -92,5 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <br> <b>Uhrzeit:</b> ${zeit}`;
 		}
 	}
-})
+}
+)
 

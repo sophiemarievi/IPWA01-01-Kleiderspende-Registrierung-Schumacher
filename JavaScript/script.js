@@ -10,3 +10,6 @@ function validPlz() {
 	}
 }
 
+let eingabePlz = document.getElementById("form2DonationPlz");
+eingabePlz.onblur = validPlz;
+
